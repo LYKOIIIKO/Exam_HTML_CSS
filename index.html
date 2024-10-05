@@ -16,21 +16,35 @@
 <header class="header">
 	<div class="container">
 
-		<a class="header__logo" href="#"><img class="header__logo_img" src="images/logo.png" alt="Logo"></a></div>
+		<a class="header__logo" href="#"><img class="header__logo_img" src="images/logo.png" alt="Logo"></a>
 
 		<nav class="header__nav">
 			<ul class="header__nav_list">
 				<li class="header__nav_item"><a href="#" class="header__nav_link">Home</a></li>
-				<li class="header__nav_item"><a href="#" class="header__nav_link">About Us</a></li>
-				<li class="header__nav_item"><a href="#" class="header__nav_link">Shop</a></li>
-				<li class="header__nav_item"><a href="#" class="header__nav_link">Pages</a></li>
-				<li class="header__nav_item"><a href="#" class="header__nav_link">Contact Us</a></li>
+				<li class="header__nav_item"><a href="#about" class="header__nav_link">About Us</a></li>
+				<li class="header__nav_item">
+					<a href="#products" class="header__nav_link">Shop</a>
+					<ul class="header__nav_sublist">
+						<li class="header__nav_subitem"><a href="#" class="header__nav_sublink">Vegetables</a></li>
+						<li class="header__nav_subitem"><a href="#" class="header__nav_sublink">Fruits</a></li>
+						<li class="header__nav_subitem"><a href="#" class="header__nav_sublink">Mill</a></li>
+					</ul>
+				</li>
+				<li class="header__nav_item">
+					<a href="#" class="header__nav_link">Pages</a>
+					<ul class="header__nav_sublist">
+						<li class="header__nav_subitem"><a href="#" class="header__nav_sublink">Page 1</a></li>
+						<li class="header__nav_subitem"><a href="#" class="header__nav_sublink">Page 2</a></li>
+						<li class="header__nav_subitem"><a href="#" class="header__nav_sublink">Page 3</a></li>
+					</ul>
+				</li>
+				<li class="header__nav_item"><a href="#footer" class="header__nav_link">Contact Us</a></li>
 			</ul>
 		</nav>
 
-		<div class="header__cart">
-			<button class="header__cart_btn">Cart 0</button>
-		</div>
+		
+		<button class="header__cart_btn">Cart 0</button>
+		
 
 	</div>
 </header>
@@ -53,21 +67,25 @@
 	<div class="container">
 
 		<div class="get__item1">
-			<h3 class="get__title">Natural!!</h3>
+			<div class="get__item_container">
+				<h3 class="get__title1">Natural!!</h3>
 
-			<p class="get__text">Get Garden Fresh Fruits</p>
+				<p class="get__text1">Get Garden Fresh Fruits</p>
+			</div>
 		</div>
 
 		<div class="get__item2">
-			<h3 class="get__title">Offer!!</h3>
+			<div class="get__item_container">
+				<h3 class="get__title2">Offer!!</h3>
 
-			<p class="get__text">Get 10% off on Vegetables</p>
+				<p class="get__text2">Get 10% off on Vegetables</p>
+			</div>
 		</div>
 
 	</div>
 </section>
 
-<section class="about">
+<section class="about" id="about">
 	<div class="container">
 
 		<img src="images/img-about.png" alt="About" class="about__img">
@@ -83,15 +101,19 @@
 
 			<div class="about__advantages">
 				<div class="about__advantages_item1">
-					<h4 class="about__advantages_title">Organic Foods Only</h4>
+					<div class="about__advantages_container">
+						<h4 class="about__advantages_title">Organic Foods Only</h4>
 
-					<p class="about__advantages_text">The Product that you ordered will be verified that we have or not if have we will start to move on with the next step.</p>
+						<p class="about__advantages_text">The Product that you ordered will be verified that we have or not if have we will start to move on with the next step.</p>
+					</div>
 				</div>
 
 				<div class="about__advantages_item2">
-					<h4 class="about__advantages_title">Quality Standards</h4>
+					<div class="about__advantages_container">
+						<h4 class="about__advantages_title">Quality Standards</h4>
 
-					<p class="about__advantages_text">Once your product is packed it will be delivered to your nearby locality you can directly visit the to buy the product.</p>
+						<p class="about__advantages_text">Once your product is packed it will be delivered to your nearby locality you can directly visit the to buy the product.</p>
+					</div>
 				</div>
 			</div>
 
@@ -102,7 +124,7 @@
 	</div>
 </section>
 
-<section class="products">
+<section class="products" id="products">
 	<div class="container">
 
 		<div class="products__top">
@@ -120,9 +142,11 @@
 				<span class="products__item_name">Calabrese Broccoli</span>
 
 				<div class="products__item_bot">
-					<span class="products__item_price products__item_price-crossed">$ 25.00 USD</span>
+					<div class="products__item_bot_left">
+						<span class="products__item_price products__item_price-crossed">$ 25.00 USD</span>
 
-					<span class="products__item_price">$ 21.00 USD</span>
+						<span class="products__item_price">$ 21.00 USD</span>
+					</div>
 
 					<div class="products__item_rating">
 						<svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.82942 0.781287C7.13702 -0.122413 8.41509 -0.122403 8.72279 0.781287L9.70629 3.67075C9.84419 4.07602 10.2248 4.34853 10.6529 4.34853H13.7331C14.7131 4.34853 15.1083 5.61178 14.303 6.17025L11.8923 7.84218C11.5254 8.09662 11.3717 8.56342 11.5155 8.98612L12.455 11.7462C12.7658 12.6594 11.7311 13.4399 10.9385 12.8901L8.34599 11.0922C8.00319 10.8544 7.54893 10.8544 7.20619 11.0922L4.61371 12.8901C3.82104 13.4399 2.78632 12.6594 3.09715 11.7462L4.03664 8.98612C4.18051 8.56342 4.02675 8.09662 3.65987 7.84218L1.24913 6.17025C0.443886 5.61178 0.839076 4.34853 1.81902 4.34853H4.89923C5.32733 4.34853 5.70795 4.07602 5.8459 3.67075L6.82942 0.781287Z" fill="#FFA858"/></svg>
@@ -142,9 +166,11 @@
 				<span class="products__item_name">Fresh Corn</span>
 
 				<div class="products__item_bot">
-					<span class="products__item_price products__item_price-crossed">$ 21.23 USD</span>
+					<div class="products__item_bot_left">
+						<span class="products__item_price products__item_price-crossed">$ 21.23 USD</span>
 
-					<span class="products__item_price">$ 18.00 USD</span>
+						<span class="products__item_price">$ 18.00 USD</span>
+					</div>
 
 					<div class="products__item_rating">
 						<svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.82942 0.781287C7.13702 -0.122413 8.41509 -0.122403 8.72279 0.781287L9.70629 3.67075C9.84419 4.07602 10.2248 4.34853 10.6529 4.34853H13.7331C14.7131 4.34853 15.1083 5.61178 14.303 6.17025L11.8923 7.84218C11.5254 8.09662 11.3717 8.56342 11.5155 8.98612L12.455 11.7462C12.7658 12.6594 11.7311 13.4399 10.9385 12.8901L8.34599 11.0922C8.00319 10.8544 7.54893 10.8544 7.20619 11.0922L4.61371 12.8901C3.82104 13.4399 2.78632 12.6594 3.09715 11.7462L4.03664 8.98612C4.18051 8.56342 4.02675 8.09662 3.65987 7.84218L1.24913 6.17025C0.443886 5.61178 0.839076 4.34853 1.81902 4.34853H4.89923C5.32733 4.34853 5.70795 4.07602 5.8459 3.67075L6.82942 0.781287Z" fill="#FFA858"/></svg>
@@ -164,9 +190,11 @@
 				<span class="products__item_name">Dried Pistachio</span>
 
 				<div class="products__item_bot">
-					<span class="products__item_price products__item_price-crossed">$ 61.00 USD</span>
+					<div class="products__item_bot_left">
+						<span class="products__item_price products__item_price-crossed">$ 61.00 USD</span>
 
-					<span class="products__item_price">$ 48.00 USD</span>
+						<span class="products__item_price">$ 48.00 USD</span>
+					</div>
 
 					<div class="products__item_rating">
 						<svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.82942 0.781287C7.13702 -0.122413 8.41509 -0.122403 8.72279 0.781287L9.70629 3.67075C9.84419 4.07602 10.2248 4.34853 10.6529 4.34853H13.7331C14.7131 4.34853 15.1083 5.61178 14.303 6.17025L11.8923 7.84218C11.5254 8.09662 11.3717 8.56342 11.5155 8.98612L12.455 11.7462C12.7658 12.6594 11.7311 13.4399 10.9385 12.8901L8.34599 11.0922C8.00319 10.8544 7.54893 10.8544 7.20619 11.0922L4.61371 12.8901C3.82104 13.4399 2.78632 12.6594 3.09715 11.7462L4.03664 8.98612C4.18051 8.56342 4.02675 8.09662 3.65987 7.84218L1.24913 6.17025C0.443886 5.61178 0.839076 4.34853 1.81902 4.34853H4.89923C5.32733 4.34853 5.70795 4.07602 5.8459 3.67075L6.82942 0.781287Z" fill="#FFA858"/></svg>
@@ -186,9 +214,11 @@
 				<span class="products__item_name">Vegan Red Tomato</span>
 
 				<div class="products__item_bot">
-					<span class="products__item_price products__item_price-crossed">$ 14.00 USD</span>
+					<div class="products__item_bot_left">
+						<span class="products__item_price products__item_price-crossed">$ 14.00 USD</span>
 
-					<span class="products__item_price">$ 9.37 USD</span>
+						<span class="products__item_price">$ 9.37 USD</span>
+					</div>
 
 					<div class="products__item_rating">
 						<svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.82942 0.781287C7.13702 -0.122413 8.41509 -0.122403 8.72279 0.781287L9.70629 3.67075C9.84419 4.07602 10.2248 4.34853 10.6529 4.34853H13.7331C14.7131 4.34853 15.1083 5.61178 14.303 6.17025L11.8923 7.84218C11.5254 8.09662 11.3717 8.56342 11.5155 8.98612L12.455 11.7462C12.7658 12.6594 11.7311 13.4399 10.9385 12.8901L8.34599 11.0922C8.00319 10.8544 7.54893 10.8544 7.20619 11.0922L4.61371 12.8901C3.82104 13.4399 2.78632 12.6594 3.09715 11.7462L4.03664 8.98612C4.18051 8.56342 4.02675 8.09662 3.65987 7.84218L1.24913 6.17025C0.443886 5.61178 0.839076 4.34853 1.81902 4.34853H4.89923C5.32733 4.34853 5.70795 4.07602 5.8459 3.67075L6.82942 0.781287Z" fill="#FFA858"/></svg>
@@ -208,9 +238,11 @@
 				<span class="products__item_name">Organic Almonds</span>
 
 				<div class="products__item_bot">
-					<span class="products__item_price products__item_price-crossed">$ 21.00 USD</span>
+					<div class="products__item_bot_left">
+						<span class="products__item_price products__item_price-crossed">$ 21.00 USD</span>
 
-					<span class="products__item_price">$ 18.00 USD</span>
+						<span class="products__item_price">$ 18.00 USD</span>
+					</div>
 
 					<div class="products__item_rating">
 						<svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.82942 0.781287C7.13702 -0.122413 8.41509 -0.122403 8.72279 0.781287L9.70629 3.67075C9.84419 4.07602 10.2248 4.34853 10.6529 4.34853H13.7331C14.7131 4.34853 15.1083 5.61178 14.303 6.17025L11.8923 7.84218C11.5254 8.09662 11.3717 8.56342 11.5155 8.98612L12.455 11.7462C12.7658 12.6594 11.7311 13.4399 10.9385 12.8901L8.34599 11.0922C8.00319 10.8544 7.54893 10.8544 7.20619 11.0922L4.61371 12.8901C3.82104 13.4399 2.78632 12.6594 3.09715 11.7462L4.03664 8.98612C4.18051 8.56342 4.02675 8.09662 3.65987 7.84218L1.24913 6.17025C0.443886 5.61178 0.839076 4.34853 1.81902 4.34853H4.89923C5.32733 4.34853 5.70795 4.07602 5.8459 3.67075L6.82942 0.781287Z" fill="#FFA858"/></svg>
@@ -230,10 +262,12 @@
 				<span class="products__item_name">Brown Hazelnut</span>
 
 				<div class="products__item_bot">
-					<span class="products__item_price products__item_price-crossed">$ 43.00 USD</span>
+					<div class="products__item_bot_left">
+						<span class="products__item_price products__item_price-crossed">$ 43.00 USD</span>
 
-					<span class="products__item_price">$ 34.00 USD</span>
-
+						<span class="products__item_price">$ 34.00 USD</span>
+					</div>
+					
 					<div class="products__item_rating">
 						<svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.82942 0.781287C7.13702 -0.122413 8.41509 -0.122403 8.72279 0.781287L9.70629 3.67075C9.84419 4.07602 10.2248 4.34853 10.6529 4.34853H13.7331C14.7131 4.34853 15.1083 5.61178 14.303 6.17025L11.8923 7.84218C11.5254 8.09662 11.3717 8.56342 11.5155 8.98612L12.455 11.7462C12.7658 12.6594 11.7311 13.4399 10.9385 12.8901L8.34599 11.0922C8.00319 10.8544 7.54893 10.8544 7.20619 11.0922L4.61371 12.8901C3.82104 13.4399 2.78632 12.6594 3.09715 11.7462L4.03664 8.98612C4.18051 8.56342 4.02675 8.09662 3.65987 7.84218L1.24913 6.17025C0.443886 5.61178 0.839076 4.34853 1.81902 4.34853H4.89923C5.32733 4.34853 5.70795 4.07602 5.8459 3.67075L6.82942 0.781287Z" fill="#FFA858"/></svg>
 						<svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.82942 0.781287C7.13702 -0.122413 8.41509 -0.122403 8.72279 0.781287L9.70629 3.67075C9.84419 4.07602 10.2248 4.34853 10.6529 4.34853H13.7331C14.7131 4.34853 15.1083 5.61178 14.303 6.17025L11.8923 7.84218C11.5254 8.09662 11.3717 8.56342 11.5155 8.98612L12.455 11.7462C12.7658 12.6594 11.7311 13.4399 10.9385 12.8901L8.34599 11.0922C8.00319 10.8544 7.54893 10.8544 7.20619 11.0922L4.61371 12.8901C3.82104 13.4399 2.78632 12.6594 3.09715 11.7462L4.03664 8.98612C4.18051 8.56342 4.02675 8.09662 3.65987 7.84218L1.24913 6.17025C0.443886 5.61178 0.839076 4.34853 1.81902 4.34853H4.89923C5.32733 4.34853 5.70795 4.07602 5.8459 3.67075L6.82942 0.781287Z" fill="#FFA858"/></svg>
@@ -434,7 +468,7 @@
 	</div>
 </section>
 
-<footer class="footer">
+<footer class="footer" id="footer">
 	<div class="container">
 
 		<div class="footer__top">
@@ -479,11 +513,10 @@
 				</ul>
 			</div>
 		</div>
+	</div>
 
-		<div class="footer__bot">
-			<iframe class="footer__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2985.1059692276085!2d-75.51467242502183!3d41.56695108483972!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c4cdec24c6c911%3A0xfc29c9f8e4eae12d!2zODggQnJvb2tseW4gU3QsIENhcmJvbmRhbGUsIFBBIDE4NDA3LCDQodCo0JA!5e0!3m2!1sru!2sby!4v1728127193080!5m2!1sru!2sby" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-		</div>
-
+	<div class="footer__bot">
+		<iframe class="footer__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2985.1059692276085!2d-75.51467242502183!3d41.56695108483972!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c4cdec24c6c911%3A0xfc29c9f8e4eae12d!2zODggQnJvb2tseW4gU3QsIENhcmJvbmRhbGUsIFBBIDE4NDA3LCDQodCo0JA!5e0!3m2!1sru!2sby!4v1728127193080!5m2!1sru!2sby" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 	</div>
 </footer>
 </div>
