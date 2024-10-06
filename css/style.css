@@ -1,6 +1,16 @@
 /* font-family: "Open Sans", sans-serif;
 font-family: "Yellowtail", cursive;
 font-family: "Roboto", sans-serif; */
+@keyframes menu_slide {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
 * {
 	margin: 0;
 	padding: 0;
@@ -130,6 +140,35 @@ a {
 	padding: 40px 0;
 }
 
+.header__nav_close,
+.header__nav_toggle {
+    display: none;
+}
+
+#header__nav_toggle {
+    display: none;
+}
+
+.header__nav_toggle {
+	border: 0;
+	border-radius: 16px;
+	background-color: #EFD372;
+
+	font-size: 19px;
+	color: #274C5B;
+	text-transform: uppercase;
+	font-weight: bold;
+
+	padding: 23px;
+
+	cursor: pointer;
+}
+
+.header__nav_toggle:hover {
+	background-color: #274C5B;
+	color: #fff;
+}
+
 .header__nav_list {
 	display: flex;
 	flex-direction: row;
@@ -140,7 +179,8 @@ a {
 	position: relative;
 }
 
-.header__nav_link {
+.header__nav_link,
+.header__nav_sublink {
 	font-size: 19px;
 	line-height: 32px;
 }
@@ -159,14 +199,13 @@ a {
 	z-index: 99;
 
 	text-wrap: nowrap;
+	padding-top: 10px;
 }
 
 .header__nav_item:hover .header__nav_sublist {
 	display: flex;
 	flex-direction: column;
 	gap: 20px;
-
-	padding-top: 10px;
 }
 
 .header__cart_btn {
@@ -184,6 +223,10 @@ a {
 	align-items: center;
 	gap: 10px;
 	cursor: pointer;
+}
+
+.header__cart_btn:hover {
+	background-color: #EFD372;
 }
 
 .header__cart_btn::before {
@@ -354,6 +397,7 @@ a {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
+	gap: 30px;
 }
 
 .products__item,
@@ -362,8 +406,7 @@ a {
 	flex-direction: column;
 	padding: 30px;
 	align-items: flex-start;
-	width: 32%;
-	margin-bottom: 20px;
+	width: 31%;
 	border-radius: 30px;
 
 	background-color: #F9F8F8;
@@ -445,10 +488,12 @@ a {
 	background-image: url(../images/bg-reviews.png);
 	background-repeat: no-repeat;
 	background-size: contain;
+	background-position: center;
+	padding: 150px 0;
+	background-color: #FCFCFC;
 }
 
 .rev .container {
-	padding: 150px 0;
 	display: flex;
 	flex-direction: column;
 	gap: 100px;
@@ -465,6 +510,7 @@ a {
 
 .rev__top_title {
 	margin-bottom: 60px;
+	text-align: center;
 }
 
 .rev__top_userpic {
@@ -545,6 +591,7 @@ a {
 	font-size: 18px;
 	line-height: 32px;
 	font-weight: bold;
+	text-align: center;
 }
 
 .offer {
@@ -586,11 +633,11 @@ a {
 
 	display: flex;
 	flex-direction: column;
-	gap: 10px;
+	gap: 15px;
 }
 
 .eco__title {
-	width: 50%;
+	width: 55%;
 	margin-top: -10px;
 }
 
@@ -657,7 +704,7 @@ a {
 	justify-content: space-between;
 	align-items: center;
 	padding: 100px 70px;
-	gap: 100px;
+	gap: 160px;
 }
 
 .sub__slogan {
@@ -724,6 +771,7 @@ a {
 	line-height: 29px;
 	color: #525C60;
 	margin-bottom: 40px;
+	text-align: right;
 }
 
 .footer__middle {
