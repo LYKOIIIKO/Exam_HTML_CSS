@@ -460,6 +460,11 @@
 }
 
 @media (max-width: 425px) {
+	.header .container {
+		flex-direction: column;
+		gap: 10px;
+	}
+
 	.get .container,
 	.about,
 	.products .container,
@@ -467,6 +472,11 @@
 	.offer .container,
 	.category {
 		padding: 20px 0;
+	}
+
+	.header__nav_sublist {
+		position: static;
+		background-color: transparent;
 	}
 
 	.promo {
@@ -563,10 +573,7 @@
 }
 
 @media (max-width: 320px) {
-	.header .container {
-		flex-direction: column;
-		gap: 10px;
-	}
+	
 
 	.products__item,
 	.offer__item {
