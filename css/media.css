@@ -559,7 +559,7 @@
 	}
 
 	.sub__slogan {
-		font-size: 40px;
+		font-size: 36px;
 	}
 
 	.sub__form_field {
@@ -574,11 +574,36 @@
 }
 
 @media (max-width: 320px) {
-	
+	h1 {
+	        font-size: 30px;
+	        line-height: 40px;
+   	}
+
+	h2 {
+	        font-size: 28px;
+	        line-height: 36px;
+    	}
+
+	h3 {
+	        font-size: 26px;
+	        line-height: 26px;
+    	}
 
 	.products__item,
 	.offer__item {
 		padding: 10px;
+	}
+
+	.about__advantages_item1::before,
+	.about__advantages_item2::before {
+		width: 50px;
+    		height: 50px;
+	}
+
+	.get__text1,
+	.get__text2 {
+		font-size: 26px;
+		line-height: 30px;
 	}
 
 	.eco__content {
