@@ -1,4 +1,4 @@
-@media (max-width: 2560px) {
+@media (max-width: 2561px) {
 	.rev {
 		background-size: cover;
 	}
@@ -12,13 +12,13 @@
 	
 }
 
-@media (max-width: 1440px) {
+@media (max-width: 1441px) {
 	.rev {
 		background-size: contain;
 	}
 }
 
-@media (max-width: 1280px) {
+@media (max-width: 1281px) {
 	.rev__list {
 		width: 85%;
 	}
@@ -28,7 +28,7 @@
 	}
 }
 
-@media (max-width: 1152px) {
+@media (max-width: 1153px) {
 	.about__img {
 		width: 50%;
 	}
@@ -75,7 +75,7 @@
 	}
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1025px) {
 	.header__nav_toggle {
         display: block;
     }
@@ -183,7 +183,7 @@
 	}
 }
 
-@media (max-width: 800px) {
+@media (max-width: 801px) {
 	h1 {
 		font-size: 50px;
 		line-height: 64px;
@@ -346,7 +346,7 @@
 	}
 }
 
-@media (max-width: 640px) {
+@media (max-width: 641px) {
 	.get .container,
 	.about,
 	.products .container,
@@ -460,7 +460,7 @@
 	}
 }
 
-@media (max-width: 425px) {
+@media (max-width: 426px) {
 	.header .container {
 		flex-direction: column;
 		gap: 10px;
@@ -574,7 +574,7 @@
 
 }
 
-@media (max-width: 320px) {
+@media (max-width: 321px) {
 	h1 {
 	        font-size: 30px;
 	        line-height: 40px;
